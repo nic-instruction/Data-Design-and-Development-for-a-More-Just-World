@@ -42,7 +42,7 @@ yum install bind-utils # We need nslookup to find our IP address dns name
 #export KEY_CN=my.domain.here.com
 #export KEY_NAME="server"
 #export KEY_OU="Community"
-                              # This is all for building certs, reminder that if you have a domain, you can get free certs from the EFF project https everywhere: https://www.eff.org/https-everywhere
+                              # This is all for building certs, reminder that if you have a domain, you can get free certs from the EFF project https everywhere: https://www.eff.org/https-everywhere but it is probobly easiest to use these 'snake oil' certs, since they are only for the purpose of connecting your clients.  They won't be used for your website, ore anything else.
 cd /etc/openvpn/easy-rsa
 source ./vars                 # Reading in all those vars we set up
 ./clean-all
