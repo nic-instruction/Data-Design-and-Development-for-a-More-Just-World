@@ -5,6 +5,11 @@
 # in the quarter, so we built some.
 # They assume the VPN will be built on Centos 7.
 
+# This script is based on commands from https://www.digitalocean.com/community/tutorials/how-to-set-up-and-configure-an-openvpn-server-on-centos-7 
+# with some updates, since the above tutorial does not work 'out of the box'.
+
+# For a step-by-step guide see the wiki: https://github.com/nic-instruction/Data-Design-and-Development-for-a-More-Just-World/wiki/Open-VPN-Step-by-Step
+
 timedatectl set-timezone America/Los_Angeles  # Set to the time zone and location your VPN server is in
 timedatectl                                   # Visually verify the configuration worked
 systemctl enable firewalld                    # Turn on the firewall (it is off by defult on many cloud instances, since each project has a firewall)
